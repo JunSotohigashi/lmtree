@@ -8,3 +8,10 @@ services:
     ports:
       - "5000:5000"
     command: flask run --host=0.0.0.0 --port=5000 --debug
+
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
