@@ -9,4 +9,4 @@ counter = 0
 def hello_world():
     global counter
     counter += 1
-    return f"<p>Hello, World! <br /> Count: {counter}</p>"
+    return {"message": f"Hello, World! count={counter}"}
